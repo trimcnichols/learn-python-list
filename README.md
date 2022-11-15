@@ -13,6 +13,43 @@ Click the snake to see the code and explanation about my code
 
 *******************************************
 -->
+<details><summary>:snake: nested list</summary>
+<p>
+
+```python
+board = [['A','B','C'],['D','E','F'],['G','H','I'],['J','K','L']]
+#print C
+print(board[0][2])
+#print H
+print(board[2][1])
+ # change L to be Z
+board[3][2] = 'Z'
+print(board)
+
+# add the list ['M','N','O'] to board
+board.append(['M','N','O'])
+print(board)
+board[0].append('Q')
+print(board)
+
+for i in range(len(board)):
+
+	print(board[i])
+
+#print  G H I
+print()
+for i in range(len(board[2])):
+	print(board[2][i])
+
+# print every letter
+print()
+for i in range(len(board)):
+	for k in range(len(board[i])):
+		print(board[i][k])
+
+```
+</p>
+</details>
 <details><summary>:snake: String manipulation </summary>
 <p>
 
