@@ -13,7 +13,56 @@ Click the snake to see the code and explanation about my code
 
 *******************************************
 -->
+<details><summary>:snake: Network hosts list</summary>
+<p>
 
+```python
+ip_addresses = ["192.168.1.14", "192.168.1.36", "192.168.1.101"]
+names = ["LINUX1", "LINUX2", "Windows", "LINUX3"]
+turned_on = ["Yes", "No", "Yes", "No"]
+
+#1
+for i in range(len(ip_addresses)):
+
+	print(ip_addresses[i])
+
+#2
+ip =input("Enter an IP address: ")
+ip_addresses.append(ip)
+print(ip_addresses)
+
+Mac = input("Enter a machine: ")
+names.append(Mac)
+print(names)
+
+turned_on.extend(["No"])
+print(turned_on)
+
+#3
+print("LINUX machines: ")
+for i in range(len(names)):
+	if "LINUX" in names[i]:
+		print(names[i])
+#4
+print("machine that on now: ")
+for i in range(len(names)):
+	if "Yes" in turned_on[i]:
+		print(names[i])
+
+
+#5 remove windows
+print()
+
+print("machine without first Windows: ")
+
+if "Windows" in names:
+	names.remove("Windows")
+print(names)		
+
+
+```
+</p>
+</details>
 
 <details><summary>:snake: nested list</summary>
 <p>
